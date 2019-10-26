@@ -1,0 +1,27 @@
+{
+  "name": "Chrome Extension Basic",
+  "version": "1.0.0",
+  "description": "A basic chrome extension that alters background color",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/pantone.png",
+      "32": "images/pantone.png",
+      "48": "images/pantone.png",
+      "128": "images/pantone.png"
+    }
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "images/pantone.png",
+    "32": "images/pantone.png",
+    "48": "images/pantone.png",
+    "128": "images/pantone.png"
+  },
+  "permissions": ["storage", "declarativeContent", "activeTab"]
+}
